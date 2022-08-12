@@ -1,0 +1,305 @@
+* {
+  font-family: "Gilroy";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f3f3;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+
+button {
+  width: 8.125vw;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 44px 27px 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 16.2px;
+}
+
+strong {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 21.6px;
+}
+
+a {
+  color: inherit;
+}
+
+.card {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  background: #ffffff;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.foto-desktop {
+  padding: 19px;
+  display: flex;
+}
+
+.foto-desktop img {
+  max-width: 23vw;
+  max-height: 59vh;
+}
+
+.foto-mobile {
+  display: none;
+}
+
+.logos {
+  z-index: 2;
+  position: relative;
+}
+
+.logos-campus {
+  position: absolute;
+  bottom: 2vw;
+  right: 23vh;
+  width: 10vw;
+  height: 5vh;
+}
+
+.logo-fogo {
+  position: absolute;
+  bottom: 1vw;
+  right: 2vh;
+  animation: fire 1s infinite alternate;
+  width: 9.5vw;
+  height: 19.5vh;
+}
+
+@keyframes fire {
+  from {
+    transform: translateY(5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo-coracao {
+  position: absolute;
+  top: 23vw;
+  right: 7vh;
+  width: 7.5vw;
+  height: 15.5vh;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  text-align: left;
+  justify-content: center;
+  margin-left: 3.3vw;
+}
+
+.texto {
+  margin-bottom: 23px;
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 90%;
+  color: #333333;
+}
+
+.h3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 130%;
+  color: #4f4f4f;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  width: 8.125vw;
+}
+
+.botoes-genericos {
+  padding: 2px;
+  border-radius: 6px;
+  display: flex;
+}
+
+.botoes button img {
+  display: none;
+}
+
+.estudante {
+  border: 1px solid rgba(183, 41, 90, 0.3);
+}
+
+.estudante button {
+  background-color: rgba(183, 41, 90, 0.1);
+  color: #b7295a;
+}
+
+.professor {
+  border: 1px solid rgba(0, 60, 113, 0.3);
+}
+
+.professor button {
+  background-color: rgba(0, 60, 113, 0.1);
+  color: #003c71;
+}
+
+.gestor {
+  border: 1px solid rgba(255, 97, 39, 0.3);
+}
+
+.gestor button {
+  background-color: rgba(255, 97, 39, 0.1);
+  color: #ff7700;
+}
+
+.estudante:hover {
+  border: 1px solid rgba(183, 41, 90, 1);
+}
+
+.professor:hover {
+  border: 1px solid rgba(0, 60, 113, 1);
+}
+
+.gestor:hover {
+  border: 1px solid rgba(255, 97, 39, 1);
+}
+
+.footer {
+  text-decoration-line: underline;
+  margin-top: 1;
+  position: relative;
+  top: 132px;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin: 0;
+    justify-content: start;
+    width: 100vw;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    flex-direction: column;
+  }
+
+  .foto-desktop {
+    display: none;
+  }
+
+  .foto-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .logos-campus {
+    margin-top: 51vh;
+    margin-left: 2.61vw;
+    position: absolute;
+    width: 10vw;
+    height: 5vh;
+  }
+
+  .logo-fogo {
+    margin-top: 115px;
+    margin-left: 261.84px;
+    width: 102.11px;
+    height: 102.11px;
+  }
+
+  .logo-coracao {
+    margin-top: 158.08px;
+    margin-left: 252px;
+    width: 80.92px;
+    height: 80.92px;
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links {
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .botoes {
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+  }
+
+  .botoes-genericos {
+    width: 100%;
+  }
+
+  .botoes button {
+    width: 100%;
+  }
+
+  .texto {
+    margin-bottom: 3px;
+  }
+
+  .h1 {
+    width: 223px;
+    height: 23px;
+    margin-top: 76px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 90%;
+  }
+
+  .h3 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 26px;
+  }
+
+  .footer {
+    top: 7vh;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .botoes button a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+}

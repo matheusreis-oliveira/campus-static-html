@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-extrabold.woff2') format('woff2'),
+    url('./gillroy-extrabold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-extrabold-italic.woff2') format('woff2'),
+    url('./gillroy-extrabold-italic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-bold.woff2') format('woff2'),
+    url('./gillroy-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-bold-italic.woff2') format('woff2'),
+    url('./gillroy-bold-italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-semibold.woff2') format('woff2'),
+    url('./gillroy-semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-semibold-italic.woff2') format('woff2'),
+    url('./gillroy-semibold-italic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-medium-italic.woff2') format('woff2'),
+    url('./gillroy-medium-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url('./gillroy-medium.woff2') format('woff2'),
+    url('./gillroy-medium.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
