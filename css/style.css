@@ -460,7 +460,7 @@ a {
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 320px) {
     .logos-campus {
       right: 22vh;
       bottom: 2vw;
