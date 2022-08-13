@@ -38,7 +38,7 @@ a {
 
 .card {
   display: flex;
-  width: 60%;
+  width: 55%;
   height: 60%;
   background: #ffffff;
   box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
@@ -76,9 +76,9 @@ a {
   position: absolute;
   bottom: 1vw;
   right: 2vh;
-  animation: fire 1s infinite alternate;
   width: 9.5vw;
   height: 19.5vh;
+  animation: fire 2s infinite alternate;
 }
 
 @keyframes fire {
@@ -96,6 +96,19 @@ a {
   right: 7vh;
   width: 7.5vw;
   height: 15.5vh;
+  animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .links {
@@ -108,7 +121,7 @@ a {
   align-content: center;
   text-align: left;
   justify-content: center;
-  margin-left: 3.3vw;
+  margin-left: 2vw;
 }
 
 .texto {
@@ -140,10 +153,6 @@ a {
   padding: 2px;
   border-radius: 6px;
   display: flex;
-}
-
-.botoes button img {
-  display: none;
 }
 
 .estudante {
@@ -185,6 +194,10 @@ a {
   border: 1px solid rgba(255, 97, 39, 1);
 }
 
+.arrow-mobile {
+  display: none;
+}
+
 .footer {
   text-decoration-line: underline;
   margin-top: 1;
@@ -192,7 +205,85 @@ a {
   top: 132px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1440px) {
+  button {
+    padding: 44px 27px 12px 4px;
+    width: 9vw;
+  }
+
+  .card {
+    width: 60%;
+  }
+
+  .foto-desktop {
+    max-width: 30vw;
+    max-height: 72vh;
+  }
+
+  .logos-campus {
+    right: 22vh;
+    bottom: 5vh;
+    width: 10vw;
+    height: 5vh;
+  }
+
+  .logo-fogo {
+    bottom: 2vh;
+    right: 3vh;
+    width: 10vw;
+    height: 19.5vh;
+  }
+
+  .logo-coracao {
+    top: 47vh;
+    right: 7vh;
+    width: 8.5vw;
+    height: 15.5vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 80%;
+  }
+
+  .logos-campus {
+    right: 21vh;
+    bottom: 5vh;
+    width: 12vw;
+    height: 4vh;
+  }
+
+  .logo-fogo {
+    bottom: 2vh;
+    right: 0vh;
+    width: 14vw;
+    height: 18.5vh;
+  }
+
+  .logo-coracao {
+    top: 47vh;
+    right: 4vh;
+    width: 12.5vw;
+    height: 15.5vh;
+  }
+
+  button {
+    width: 12vw;
+    height: 10vw;
+  }
+
+  .links {
+    margin-left: 2.3vw;
+  }
+
+  .foto-desktop img {
+    max-width: 32vw;
+    max-height: 59vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
   body {
     margin: 0;
   }
@@ -222,25 +313,27 @@ a {
   }
 
   .logos-campus {
-    margin-top: 51vh;
-    margin-left: 2.61vw;
+    right: 50vh;
+    bottom: 3vw;
+    width: 40vw;
+    height: 10vh;
     position: absolute;
-    width: 10vw;
-    height: 5vh;
   }
 
   .logo-fogo {
-    margin-top: 115px;
-    margin-left: 261.84px;
-    width: 102.11px;
-    height: 102.11px;
+    position: absolute;
+    right: 11vh;
+    top: -21vw;
+    width: 24vw;
+    height: 21vh;
   }
 
   .logo-coracao {
-    margin-top: 158.08px;
-    margin-left: 252px;
-    width: 80.92px;
-    height: 80.92px;
+    position: absolute;
+    right: 15vh;
+    top: -11vw;
+    width: 21vw;
+    height: 16vh;
   }
 
   .texto {
@@ -253,6 +346,7 @@ a {
     margin: 0;
     justify-content: flex-start;
     align-items: center;
+    overflow-y: auto;
   }
 
   .botoes {
@@ -301,5 +395,95 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
+    position: relative;
+    bottom: 3vw;
+  }
+
+  .arrow-mobile {
+    display: block;
+    position: relative;
+    bottom: 3vh;
+    left: 32vw;
+  }
+
+  @media screen and (max-width: 425px) {
+    .logos-campus {
+      right: 28vh;
+      bottom: 2vw;
+      width: 38vw;
+      height: 5vh;
+    }
+
+    .logo-fogo {
+      right: 8vh;
+      top: -22vw;
+      width: 23vw;
+      height: 13vh;
+    }
+
+    .logo-coracao {
+      right: 11vh;
+      top: -12vw;
+      width: 23vw;
+      height: 11vh;
+    }
+
+    .botoes button a {
+      bottom: 8vw;
+      left: 1vh;
+    }
+
+    .arrow-mobile {
+      left: 56vw;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .logos-campus {
+      right: 25vh;
+    }
+
+    .logo-fogo {
+      right: 8vh;
+      top: -24vw;
+      width: 24vw;
+      height: 12vh;
+    }
+
+    .logo-coracao {
+      right: 11vh;
+      top: -15vw;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .logos-campus {
+      right: 22vh;
+      bottom: 2vw;
+      width: 34vw;
+      height: 4vh;
+    }
+
+    .logo-fogo {
+      right: 8vh;
+      top: -22vw;
+      width: 23vw;
+      height: 10vh;
+    }
+
+    .logo-coracao {
+      right: 10vh;
+      top: -12vw;
+      width: 21vw;
+      height: 8vh;
+    }
+
+    .botoes {
+      width: 265px;
+    }
+
+    .botoes button a {
+      bottom: 10vw;
+    }
   }
 }
