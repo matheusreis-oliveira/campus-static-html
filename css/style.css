@@ -454,6 +454,10 @@ a {
       right: 11vh;
       top: -15vw;
     }
+
+    .arrow-mobile {
+      left: 49vw;
+    }
   }
 
   @media screen and (max-width: 375px) {
@@ -484,6 +488,9 @@ a {
 
     .botoes button a {
       bottom: 10vw;
+    }
+    .arrow-mobile {
+      left: 57vw;
     }
   }
 }
